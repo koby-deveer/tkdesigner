@@ -18,7 +18,7 @@ handler1=logging.FileHandler('ErrorFile.log')
 format1=logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 handler1.setLevel(logging.ERROR)
 handler1.setFormatter(format1)
-LoggerInfo.addHandler(handler1)
+LoggerError.addHandler(handler1)
 #Setting scale port parameters
 
 def Auto(ScalePort,PrinterPort,id):
