@@ -79,7 +79,7 @@ def Auto(ScalePort,PrinterPort,id):
                                     getDate=str(getDate)
                                     getTime=getTime.strftime("%H:%M:%S")
                                     Date=datetime.strptime(getDate,"%Y-%m-%d")
-                                    Time=datetime.strptime(getTime,"%H:%M%S")
+                                    Time=datetime.strptime(getTime,"%H:%M:%S")
                                     printerDataIn='\r\nTruck ID   {0}\r\n\r\nGross       {1} kg\r\n\r\n{2} {3}'.format(TruckId,Gross,Time,Date).encode()
 
                     ExData=[TruckId,Gross,Time,Date]
@@ -147,7 +147,7 @@ def Auto(ScalePort,PrinterPort,id):
                                     getDate=str(getDate)
                                     getTime=getTime.strftime("%H:%M:%S")
                                     Date=datetime.strptime(getDate,"%Y-%m-%d")
-                                    Time=datetime.strptime(getTime,"%H:%M%S")
+                                    Time=datetime.strptime(getTime,"%H:%M:%S")
                                     printerDataOut='Truck ID  {0}\r\n\r\nGross       {1} kg RECALLED\r\nTare        {2} kg \r\nNet         {3} kg\r\n\r\n{4} {5}\r\n'.format(TruckId,Gross,Tare,Net,Time,Date).encode()
                                 
                     ExData=[TruckId,Gross,Tare,Net,Time,Date]
